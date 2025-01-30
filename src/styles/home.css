@@ -1,0 +1,158 @@
+/* 
+  Si tu Header es fijo, reserva espacio arriba. 
+  Ajusta la altura según tu Header. 
+*/
+.home-page {
+    padding-top: 70px; 
+    /* Si también tienes Footer fijo, podrías agregar padding-bottom */
+  }
+  
+  /* Sección principal (fondo blanco) */
+  .hero-section {
+    background-color: #fff;
+    padding: 2rem 1rem;
+  }
+  
+  /* Título y subtítulo centrados */
+  .top-section {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .main-title {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .subtitle {
+    font-size: 1.1rem;
+    color: #777;
+    margin-bottom: 1rem;
+  }
+  
+  /* Contenedor principal: imagen + texto */
+  .content-container {
+    display: flex;
+    flex-direction: column; /* En móviles: stack vertical */
+    gap: 6rem;
+    align-items: flex-start;
+  }
+  @media (min-width: 768px) {
+    .content-container {
+      flex-direction: row;  /* En pantallas grandes: fila */
+      align-items: flex-start;
+    }
+  }
+  
+  /* === Ajustes para desplazar la imagen a la derecha y limitar ancho === */
+  .image-container {
+    flex: 0 0 auto;
+    margin-left: 8rem;   /* Desplaza la imagen a la derecha */
+    margin-right: 1rem;    /* Espacio entre imagen y texto */
+    max-width: 450px;      /* Limita el ancho de la imagen */
+  }
+  
+  .profile-image {
+    width: 100%;           /* La imagen se ajustará al contenedor */
+    height: auto;
+    display: block;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  /* === Limita el ancho del texto para que coincida con la imagen === */
+  .text-container {
+    flex: 1;
+    max-width: 450px;      /* Similar a la imagen */
+  }
+  
+  .about-me {
+    margin-bottom: 2rem;
+    line-height: 1.6;
+    text-align: justify;
+  }
+  
+  /* ===== Sección Proyectos ===== */
+  .projects-section {
+    padding: 2rem 1rem;
+    background: #f9f9f9;
+  }
+  
+  .projects-section h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .projects-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Mobile: 1 col */
+    gap: 1rem;
+    max-width: 800px;
+    margin: 0 auto; /* Para centrar el grid */
+  }
+  
+  @media (min-width: 768px) {
+    .projects-grid {
+      grid-template-columns: repeat(2, 1fr); /* 2 columnas en tablets/desktop */
+    }
+  }
+  
+  .project-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 4px;
+    text-align: center;
+  }
+  .project-card h3 {
+    margin-bottom: 0.5rem;
+  }
+  .project-card p {
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
+  .btn-project {
+    display: inline-block;
+    margin-top: 0.5rem;
+    background-color: #6f42c1;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    text-decoration: none;
+  }
+  .btn-project:hover {
+    background-color: #8751d3;
+  }
+  
+  /* ===== Sección Servicios ===== */
+  .services-section {
+    padding: 2rem 1rem;
+    background: #fff;
+  }
+  .services-section h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  .services-section p {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1.5;
+  }
+  
+  /* ===== Sección Contacto ===== */
+  .contact-section {
+    padding: 2rem 1rem;
+    background: #f9f9f9;
+  }
+  .contact-section h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  .contact-section p {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1.5;
+  }
+  
