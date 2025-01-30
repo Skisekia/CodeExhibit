@@ -45,11 +45,17 @@ function Home() {
       <section className="projects-section" id="proyectos">
         <h2>Mis Proyectos</h2>
         <div className="projects-grid">
+          {/* Proyecto 1: Pokedex */}
           <div className="project-card">
-            <h3>La Leyenda de Miau</h3>
-            <p>Un juego desarrollado para explorar mecánicas de aventuras.</p>
+            <img
+              src="/images/pokedex.png"
+              alt="Proyecto Pokedex"
+              className="project-image"
+            />
+            <h3>Pokedex</h3>
+            <p>Una aplicación para explorar y gestionar Pokémon utilizando React y APIs externas.</p>
             <a 
-              href="https://github.com/Skisekia/Juego_LaLeyendaDeMiau" 
+              href="https://skisekia.github.io/Pokedex/" 
               target="_blank" 
               rel="noopener noreferrer"
               className="btn-project"
@@ -57,7 +63,65 @@ function Home() {
               Ver en GitHub
             </a>
           </div>
-          {/* Agrega más project-cards si deseas */}
+
+          {/* Proyecto 2: Juego "La Leyenda de Miau" */}
+          <div className="project-card">
+            <img
+              src="/images/La_Leyenda_De_Miau.png"
+              alt="Proyecto La Leyenda de Miau"
+              className="project-image"
+            />
+            <h3>Juego "La Leyenda de Miau"</h3>
+            <p>Un juego desarrollado para explorar mecánicas de aventuras.</p>
+            <a 
+              href="https://skisekia.github.io/Pokedex/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="btn-project"
+            >
+              Ver en GitHub
+            </a>
+          </div>
+
+          {/* Proyecto 3: LoginFirebase */}
+          <div className="project-card">
+            <img
+              src="/images/loginfirebase.png"
+              alt="Proyecto LoginFirebase"
+              className="project-image"
+            />
+            <h3>LoginFirebase</h3>
+            <p>Implementación de autenticación de usuarios utilizando Firebase en una aplicación React.</p>
+            <a 
+              href="https://skisekia.github.io/LoginFirebase/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="btn-project"
+            >
+              Ver en GitHub
+            </a>
+          </div>
+
+          {/* Proyecto 4: Comercial */}
+          <div className="project-card">
+            <img
+              src="/images/comercial.png"
+              alt="Proyecto Comercial"
+              className="project-image"
+            />
+            <h3>Portal Comercial</h3>
+            <p>Desarrollo de un sistema de gestión comercial para pequeñas empresas con PHP y MySQL.</p>
+            <a 
+              href="https://github.com/Skisekia/comercial" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="btn-project"
+            >
+              Ver en GitHub
+            </a>
+          </div>
+          
+          {/* Puedes añadir más proyectos siguiendo el mismo formato */}
         </div>
       </section>
 

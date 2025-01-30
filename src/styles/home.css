@@ -73,7 +73,7 @@
   }
   
   /* ===== Sección Proyectos ===== */
-  .projects-section {
+.projects-section {
     padding: 2rem 1rem;
     background: #f9f9f9;
   }
@@ -85,15 +85,15 @@
   
   .projects-grid {
     display: grid;
-    grid-template-columns: 1fr; /* Mobile: 1 col */
-    gap: 1rem;
-    max-width: 800px;
-    margin: 0 auto; /* Para centrar el grid */
+    grid-template-columns: 1fr; /* Mobile: 1 columna */
+    gap: 2rem; /* Aumentar el espacio entre las tarjetas */
+    max-width: 1200px; /* Aumentar el ancho máximo para acomodar más tarjetas */
+    margin: 0 auto; /* Centrar el grid */
   }
   
   @media (min-width: 768px) {
     .projects-grid {
-      grid-template-columns: repeat(2, 1fr); /* 2 columnas en tablets/desktop */
+      grid-template-columns: repeat(3, 1fr); /* 3 columnas en tablets/desktop */
     }
   }
   
@@ -101,28 +101,43 @@
     background: #fff;
     border: 1px solid #ddd;
     padding: 1rem;
-    border-radius: 4px;
+    border-radius: 8px; /* Bordes más redondeados */
     text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil para dar profundidad */
+    transition: transform 0.3s, box-shadow 0.3s; /* Transiciones para efectos hover */
   }
+  
+  .project-card:hover {
+    transform: translateY(-5px); /* Eleva ligeramente la tarjeta al pasar el mouse */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Aumenta la sombra al hacer hover */
+  }
+  
   .project-card h3 {
     margin-bottom: 0.5rem;
+    font-size: 1.5rem; /* Tamaño de fuente aumentado */
   }
+  
   .project-card p {
-    font-size: 0.95rem;
-    line-height: 1.4;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 1rem; /* Añadir espacio antes del botón */
   }
+  
   .btn-project {
     display: inline-block;
     margin-top: 0.5rem;
     background-color: #6f42c1;
     color: #fff;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 1.5rem; /* Aumentar el padding para botones más grandes */
     border-radius: 4px;
     text-decoration: none;
+    transition: background-color 0.3s;
   }
+  
   .btn-project:hover {
     background-color: #8751d3;
   }
+  
   
   /* ===== Sección Servicios ===== */
   .services-section {
@@ -154,5 +169,14 @@
     margin: 0 auto;
     text-align: center;
     line-height: 1.5;
+  }
+  
+  /* Estilo para las imágenes de los proyectos */
+.project-image {
+    width: 100%;
+    height: 200px; /* Ajusta la altura según tus necesidades */
+    object-fit: cover; /* Asegura que la imagen cubra todo el contenedor sin distorsionarse */
+    border-radius: 4px; /* Opcional: añade bordes redondeados */
+    margin-bottom: 1rem; /* Espacio entre la imagen y el título */
   }
   
