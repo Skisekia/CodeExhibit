@@ -10,7 +10,7 @@ function Home() {
         <div className="top-section">
           <h1 className="main-title">¡Hola! Soy Siclary Arreola</h1>
           <p className="subtitle">
-            Desarrollador Jr | C#, PHP, JavaScript, SQL Server &amp; MySQL
+            Desarrollador Full Stack Jr | C#, PHP, JavaScript, SQL Server &amp; MySQL
           </p>
         </div>
         
@@ -74,7 +74,7 @@ function Home() {
             <h3>Juego "La Leyenda de Miau"</h3>
             <p>Un juego desarrollado para explorar mecánicas de aventuras.</p>
             <a 
-              href="https://skisekia.github.io/Pokedex/" 
+              href="https://skisekia.github.io/Juego_LaLeyendaDeMiau/" 
               target="_blank" 
               rel="noopener noreferrer"
               className="btn-project"

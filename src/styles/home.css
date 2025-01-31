@@ -86,14 +86,14 @@
   .projects-grid {
     display: grid;
     grid-template-columns: 1fr; /* Mobile: 1 columna */
-    gap: 2rem; /* Aumentar el espacio entre las tarjetas */
+    gap: 1rem; /* Aumentar el espacio entre las tarjetas */
     max-width: 1200px; /* Aumentar el ancho máximo para acomodar más tarjetas */
     margin: 0 auto; /* Centrar el grid */
   }
   
   @media (min-width: 768px) {
     .projects-grid {
-      grid-template-columns: repeat(3, 1fr); /* 3 columnas en tablets/desktop */
+      grid-template-columns: repeat(4, 1fr); /* 3 columnas en tablets/desktop */
     }
   }
   

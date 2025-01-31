@@ -1,5 +1,5 @@
 .header {
-  position: fixed;       /* Para que el header quede fijo arriba */
+  position: fixed;   /* Para que el header quede fijo arriba */
   top: 0;
   width: 100%;
   z-index: 9999;         /* Asegura que quede sobre otros elementos */
@@ -8,19 +8,19 @@
 
 /* Ejemplo: cambia el color de fondo al scrollear */
 .header.scrolled {
-  background-color: #b5a2d8; /* o el color que prefieras */
+  background-color: #dcb2fe; /* o el color que prefieras */
 }
 
 .navbar {
   /* Ajusta la altura mínima si quieres un header más alto */
-  min-height: 80px;
-  background: linear-gradient(to right, #a463db, #c48de6); /* degrade de ejemplo */
+  min-height: 60px;
+  background: linear-gradient(to right,  #dcb2fe, #c48de6); /* degrade de ejemplo */
 }
 
 /* Solo ejemplo de estilo de logo */
 .header-logo {
-  width: 80px;
-  height: 80px;
+  width: 50px;
+  height: 50px;
   object-fit: cover;
   border-radius: 50%;
 }
